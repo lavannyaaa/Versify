@@ -8,7 +8,7 @@
       type="image/png"
     />
       <style>
-    body {
+     body {
       background-image: url("https://images.pexels.com/photos/3616498/pexels-photo-3616498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
       background-size: cover;
       background-repeat: no-repeat;
@@ -31,7 +31,12 @@
       align-items: center;
     }
 
-    .navbar-left a {
+    .navbar-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-right a {
       color: white;
       text-decoration: none;
       margin-right: 20px;
@@ -40,15 +45,22 @@
     .navbar .logo {
       width: 50px;
       height: 50px;
+      padding-right: 20px;
     }
 
-    .navbar input[type="text"] {
+    .navbar-right input[type="text"] {
       padding: 10px;
       border: none;
       border-radius: 5px;
       background-color: white;
       color: black;
     }
+
+     .name {
+      font-family: cursive;
+      color: white;
+    }
+
 
     h1 {
       color: white;
@@ -65,16 +77,18 @@
       margin: 20px;
     }
   </style>
-  </head>
-  <body>
-    
-    <div class="navbar">
+</head>
+<body>
+  <div class="navbar">
     <div class="navbar-left">
+      <img class="logo" src="https://www.dictionary.com/e/wp-content/uploads/2018/10/dove-of-peace-300x300.png" alt="Logo">
+      <a class="name"><h3>Versify</h3></a>
+    </div>
+    <div class="navbar-right">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <input type="text" placeholder="Search...">
     </div>
-    <img class="logo" src="https://www.dictionary.com/e/wp-content/uploads/2018/10/dove-of-peace-300x300.png" alt="Logo">
   </div>
 
     
