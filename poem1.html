@@ -1,40 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Versify</title>
-    <link
-      rel="icon"
-      href="https://www.dictionary.com/e/wp-content/uploads/2018/10/dove-of-peace-300x300.png"
-      type="image/png"
-    />
-    <style>
-      body {
-        background-image: url("https://images.pexels.com/photos/3616498/pexels-photo-3616498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: right top;
-        background-attachment: fixed;
-        backdrop-filter: blur(5px);
-      }
+<head>
+  <title>Versify</title>
+  <link rel="icon" href="https://www.dictionary.com/e/wp-content/uploads/2018/10/dove-of-peace-300x300.png" type="image/png" />
+  <style>
+    body {
+      background-image: url("https://images.pexels.com/photos/3616498/pexels-photo-3616498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-attachment: fixed;
+      backdrop-filter: blur(5px);
+      margin: 0;
+    }
 
-      h1 {
-        color: white;
-        font-size: 50px;
-        font-family: cursive;
-        text-align: center;
-      }
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+    }
 
-      p {
-        color: wheat;
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Unrequited Love</h1>
-    <p>
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar input[type="text"] {
+      float: right;
+      padding: 10px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: white;
+      color: black;
+    }
+
+    .navbar button {
+      float: right;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    h1 {
+      color: white;
+      font-size: 50px;
+      font-family: cursive;
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    p {
+      color: wheat;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <input type="text" placeholder="Search...">
+    <button onclick="history.back()"><img src="https://cdn-icons-png.flaticon.com/512/93/93634.png" width="20" height="20"></button>
+  </div>
+  <h1>Unrequited Love</h1>
+  <p>
       In the depth of Unrequited endearment , <br />
       With hopes and longings and cravings , <br />
       I find myself dwell in realm of one sided love , <br />
@@ -59,7 +94,6 @@
       With grace, with strength, with a gentle sigh,<br />
       Waiting for a magical moment to happen ,<br />
       In the fictional world where you're mine.<br /><br /><br />
-    </p>
-   <button onclick="history.back()"><img src="https://cdn-icons-png.flaticon.com/512/93/93634.png" width="20" height="20"></button>
-  </body>
+  </p>
+</body>
 </html>
