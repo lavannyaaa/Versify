@@ -7,8 +7,8 @@
       href="https://www.dictionary.com/e/wp-content/uploads/2018/10/dove-of-peace-300x300.png"
       type="image/png"
     />
-      <style>
-        body {
+        <style>
+    body {
       background-image: url("https://images.pexels.com/photos/3616498/pexels-photo-3616498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
       background-size: cover;
       background-repeat: no-repeat;
@@ -60,7 +60,52 @@
       font-family: cursive;
       color: white;
     }
+        
+     .dropbtn {
+      background-color: #17191a;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
 
+    .dropbtn:hover, .dropbtn:focus {
+      background-color: #2a2c2e;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown a:hover {
+      background-color: #726969;
+    }
+
+    .show { 
+      display: block; 
+     }
 
     h1 {
       color: white;
@@ -87,9 +132,18 @@
     <div class="navbar-right">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <input type="text" placeholder="Search...">
+      <button onclick="myFunction()" class="dropbtn">Other poems</button>
+      <div id="myDropdown" class="dropdown-content">
+      <a href="poem1.html">UNREQUITED LOVE</a>
+      <a href="poem2.html">STARRY SKIES</a>
+      <a href="poem3.html">MY YEARNINGS</a>
+      <a href="poem4.html">MASKED AGONY</a>
+      <a href="poem5.html">YOU !</a>
+      <a href="poem6.html">STILL I RISE</a>
+  </div>
     </div>
   </div>
+  <div>
     <h1>Masked Agony</h1>
 
     <p>
