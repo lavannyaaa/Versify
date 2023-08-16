@@ -1,37 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Versify</title>
-    <link
-      rel="icon"
-      href="https://www.dictionary.com/e/wp-content/uploads/2018/10/dove-of-peace-300x300.png"
-      type="image/png"
-    />
-    <style>
-      title {
-        font-family: cursive;
-      }
+<head>
+  <title>Versify</title>
+  <link rel="icon" href="https://www.dictionary.com/e/wp-content/uploads/2018/10/dove-of-peace-300x300.png" type="image/png" />
+  <style>
+    body {
+      background-image: url("https://images.pexels.com/photos/3616498/pexels-photo-3616498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-attachment: fixed;
+      backdrop-filter: blur(5px);
+      margin: 0;
+    }
 
-      body {
-        background-image: url("https://images.pexels.com/photos/3616498/pexels-photo-3616498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: right top;
-        background-attachment: fixed;
-        backdrop-filter: blur(5px);
-      }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+    }
 
-      h1 {
-        color: white;
-        font-size: 60px;
-        text-align: center;
-        font-family: cursive;
-      }
+    .navbar-left {
+      display: flex;
+      align-items: center;
+    }
 
-      h2 {
+    .navbar-left a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+
+    .navbar .logo {
+      width: 50px;
+      height: 50px;
+    }
+
+    .navbar input[type="text"] {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: white;
+      color: black;
+    }
+
+    h1 {
+      color: white;
+      font-size: 50px;
+      font-family: cursive;
+      text-align: center;
+      margin-top: 80px;
+    }
+    
+    h2 {
         color: rgb(255, 236, 236);
         font-family: roboto;
         text-align: center;
@@ -45,9 +68,25 @@
         color: antiquewhite;
         font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
       }
-    </style>
-  </head>
-  <body>
+
+    p {
+      color: wheat;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-left">
+      <a href="index.html">Home</a>
+      <a href="#">About</a>
+      <input type="text" placeholder="Search...">
+    </div>
+    <img class="logo" src="https://www.dictionary.com/e/wp-content/uploads/2018/10/dove-of-peace-300x300.png" alt="Logo">
+  </div>
+  <div>
     <h1>Versify</h1>
 
     <h2>
@@ -70,5 +109,6 @@
 
       <li><a href="poem6.html">STILL I RISE</a></li>
     </ul>
-  </body>
+  </div>
+</body>
 </html>
