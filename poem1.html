@@ -15,63 +15,35 @@
     }
 
     .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       background-color: rgba(0, 0, 0, 0.5);
-      overflow: hidden;
+      padding: 10px 20px;
     }
 
-    .navbar a {
-      float: left;
-      display: block;
+    .navbar-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-left a {
       color: white;
-      text-align: center;
-      padding: 14px 16px;
       text-decoration: none;
+      margin-right: 20px;
     }
 
-    .navbar .dropdown {
-      float: left;
-      overflow: hidden;
-    }
-
-    .navbar .dropdown .dropbtn {
-      font-size: 16px;
-      border: none;
-      outline: none;
-      color: white;
-      padding: 14px 16px;
-      background-color: inherit;
-      font-family: inherit;
-      margin: 0;
-    }
-
-    .navbar .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-
-    .navbar .dropdown:hover .dropdown-content {
-      display: block;
+    .navbar .logo {
+      width: 50px;
+      height: 50px;
     }
 
     .navbar input[type="text"] {
-      float: right;
       padding: 10px;
-      margin: 10px;
       border: none;
       border-radius: 5px;
       background-color: white;
       color: black;
-    }
-
-    .navbar button {
-      float: right;
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
     }
 
     h1 {
@@ -92,42 +64,39 @@
 </head>
 <body>
   <div class="navbar">
-    <a href="#">Home</a>
-    <div class="dropdown">
-      <button class="dropbtn">Menu</button>
-      <div class="dropdown-content">
-        <a href="#">About</a>
-      </div>
+    <div class="navbar-left">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <input type="text" placeholder="Search...">
     </div>
-    <input type="text" placeholder="Search...">
-    <button onclick="history.back()"><img src="https://cdn-icons-png.flaticon.com/512/93/93634.png" width="20" height="20"></button>
+    <img class="logo" src="https://www.dictionary.com/e/wp-content/uploads/2018/10/dove-of-peace-300x300.png" alt="Logo">
   </div>
   <h1>Unrequited Love</h1>
   <p>
-      In the depth of Unrequited endearment , <br />
-      With hopes and longings and cravings , <br />
-      I find myself dwell in realm of one sided love , <br />
-      In the nostalgia that's exclusively mine. <br /><br />
+    In the depth of Unrequited endearment , <br />
+With hopes and longings and cravings , <br />
+I find myself dwell in realm of one sided love , <br />
+In the nostalgia that's exclusively mine. <br /><br />
 
-      I watch from afar, hidden in shadows , <br />
-      Admiring your existence from a distance , <br />
-      Like a sunflower trying to reach the sun , <br />
-      Unseen , unheard and yet lingering in depth of consciousness. <br /><br />
+I watch from afar, hidden in shadows , <br />
+Admiring your existence from a distance , <br />
+Like a sunflower trying to reach the sun , <br />
+Unseen , unheard and yet lingering in depth of consciousness. <br /><br />
 
-      For the every smile you show the world ,<br />
-      For the every twinkle in your eyes ,<br />
-      Each moment it aches deeper ,<br />
-      As I cherish your presence every now and then.<br /><br />
+For the every smile you show the world ,<br />
+For the every twinkle in your eyes ,<br />
+Each moment it aches deeper ,<br />
+As I cherish your presence every now and then.<br /><br />
 
-      I know that you don't belong to me ,<br />
-      I have realization that I can never have you<br />
-      Yet I Envision your presence on canvas of my dreams ,<br />
-      embracing the hope that our paths may one day intertwine.<br /><br />
+I know that you don't belong to me ,<br />
+I have realization that I can never have you<br />
+Yet I Envision your presence on canvas of my dreams ,<br />
+embracing the hope that our paths may one day intertwine.<br /><br />
 
-      Until then, I'll carry this unrequited love,<br />
-      With grace, with strength, with a gentle sigh,<br />
-      Waiting for a magical moment to happen ,<br />
-      In the fictional world where you're mine.<br /><br /><br />
+Until then, I'll carry this unrequited love,<br />
+With grace, with strength, with a gentle sigh,<br />
+Waiting for a magical moment to happen ,<br />
+In the fictional world where you're mine.<br /><br /><br />
   </p>
 </body>
 </html>
